@@ -1,11 +1,17 @@
+#This code is meant show the difference between a .each and collect
 def reverse_each_word(string)
-    new_arr = []
-    arr = string.split(" ")
-    arr.each { |i| new_arr << i.reverse }
-    new_arr.join(" ")
-end
-
-# 
-def reverse_each_word_collect(string)
-    string.split(" ").collect { |i| i.reverse }.join(" ")
+   string = string.split(" ")
+    #i = 0
+    #j = 0
+    #newString = [" "]
+    #while(i < string.length)
+    #string.each do |string|
+     #string = string.reverse()
+     #newString[j] = string
+       #i += 1
+       #j += 1
+    # end
+      newString = string.collect{|reverse_string| reverse_string.reverse}
+  #end
+  return newString.join(' ')
 end
